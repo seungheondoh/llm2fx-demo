@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": -6.0,
+        "low_shelf_cutoff_freq": 200.0,
+        "low_shelf_q_factor": 1.5,
+        "band0_gain_db": -1.0,
+        "band0_cutoff_freq": 500.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": 2.0,
+        "band1_cutoff_freq": 1200.0,
+        "band1_q_factor": 1.5,
+        "band2_gain_db": 4.0,
+        "band2_cutoff_freq": 3000.0,
+        "band2_q_factor": 0.7,
+        "band3_gain_db": 0.0,
+        "band3_cutoff_freq": 6000.0,
+        "band3_q_factor": 1.0,
+        "high_shelf_gain_db": 3.0,
+        "high_shelf_cutoff_freq": 12000.0,
+        "high_shelf_q_factor": 1.2
+    },
+    "reason": "A harsh sound for guitar is achieved by reducing the warmth (low frequencies) with a low shelf cut (-6dB at 200Hz), boosting the high mid frequencies (2dB at 1.2kHz and 4dB at 3kHz) to accentuate the harshness, and adding a high shelf boost (3dB at 12kHz) to further emphasize the treble."
+}

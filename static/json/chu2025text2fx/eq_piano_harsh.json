@@ -1,0 +1,22 @@
+{
+    "ParametricEQ": {
+        "low_shelf_gain_db": -3.298534393310547,
+        "low_shelf_cutoff_freq": 318.61907958984375,
+        "low_shelf_q_factor": 1.1989413499832153,
+        "band0_gain_db": 14.171241760253906,
+        "band0_cutoff_freq": 1917.39990234375,
+        "band0_q_factor": 1.366373062133789,
+        "band1_gain_db": 16.431076049804688,
+        "band1_cutoff_freq": 6905.83203125,
+        "band1_q_factor": 5.756401538848877,
+        "band2_gain_db": 12.50259780883789,
+        "band2_cutoff_freq": 10302.3515625,
+        "band2_q_factor": 5.871094703674316,
+        "band3_gain_db": -6.280001640319824,
+        "band3_cutoff_freq": 12173.53125,
+        "band3_q_factor": 1.8747615814208984,
+        "high_shelf_gain_db": 17.757965087890625,
+        "high_shelf_cutoff_freq": 7112.2373046875,
+        "high_shelf_q_factor": 5.4031171798706055
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": -3.0,
+        "low_shelf_cutoff_freq": 100.0,
+        "low_shelf_q_factor": 0.7,
+        "band0_gain_db": 2.0,
+        "band0_cutoff_freq": 500.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": 3.0,
+        "band1_cutoff_freq": 1500.0,
+        "band1_q_factor": 0.8,
+        "band2_gain_db": 5.0,
+        "band2_cutoff_freq": 3000.0,
+        "band2_q_factor": 1.0,
+        "band3_gain_db": 3.0,
+        "band3_cutoff_freq": 5000.0,
+        "band3_q_factor": 1.2,
+        "high_shelf_gain_db": 4.0,
+        "high_shelf_cutoff_freq": 8000.0,
+        "high_shelf_q_factor": 0.7
+    },
+    "reason": "To achieve a bright sound for a guitar, the high frequencies are accentuated to enhance clarity and presence. The low shelf reduces muddiness by cutting some of the lower frequencies. Boosting around 500 Hz to 1500 Hz enhances articulation, while significant boosts in the 3000 Hz to 5000 Hz range and a high shelf boost around 8000 Hz enhance brightness and definition."
+}

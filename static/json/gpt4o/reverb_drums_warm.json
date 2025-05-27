@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": -2.0,
+        "band1_gain": -1.5,
+        "band2_gain": -1.0,
+        "band3_gain": 0.0,
+        "band4_gain": 1.0,
+        "band5_gain": 2.0,
+        "band6_gain": 2.5,
+        "band7_gain": 2.5,
+        "band8_gain": 2.0,
+        "band9_gain": 1.5,
+        "band10_gain": 0.5,
+        "band11_gain": -0.5,
+        "band0_decay": 1.2,
+        "band1_decay": 1.5,
+        "band2_decay": 1.8,
+        "band3_decay": 2.0,
+        "band4_decay": 2.2,
+        "band5_decay": 2.3,
+        "band6_decay": 2.3,
+        "band7_decay": 2.3,
+        "band8_decay": 2.2,
+        "band9_decay": 2.0,
+        "band10_decay": 1.8,
+        "band11_decay": 1.5,
+        "mix": 0.35
+    },
+    "reason": "To achieve a warm sound for drums, the reverb emphasizes mid to lower frequencies with increased gain, providing richness without being overly bright or harsh. Moderate decay times sustain the warmth while maintaining clarity, and a mix setting keeps the balance between wet and dry signals, enhancing the drums without overpowering the natural sound."
+}

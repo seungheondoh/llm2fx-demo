@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": -4.0,
+        "band1_gain": -2.5,
+        "band2_gain": 0.0,
+        "band3_gain": 1.5,
+        "band4_gain": 2.0,
+        "band5_gain": 2.5,
+        "band6_gain": 3.0,
+        "band7_gain": 2.0,
+        "band8_gain": 1.0,
+        "band9_gain": 0.0,
+        "band10_gain": -1.5,
+        "band11_gain": -3.0,
+        "band0_decay": 2.5,
+        "band1_decay": 3.0,
+        "band2_decay": 3.5,
+        "band3_decay": 4.0,
+        "band4_decay": 4.5,
+        "band5_decay": 5.0,
+        "band6_decay": 4.5,
+        "band7_decay": 4.0,
+        "band8_decay": 3.5,
+        "band9_decay": 3.0,
+        "band10_decay": 2.5,
+        "band11_decay": 2.0,
+        "mix": 0.6
+    },
+    "reason": "To evoke a sad and emotive sound for guitar, the reverb emphasizes mid to low frequencies with wide decay times, common in melancholic music. This choice creates an immersive, reflective space typical of emotional acoustic environments, enhancing the guitar's natural tone while maintaining clarity. The mix level provides enough wetness to envelop the listener without overpowering the instrument."
+}

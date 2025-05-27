@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.5,
+        "band1_gain": 0.6,
+        "band2_gain": 0.8,
+        "band3_gain": 0.9,
+        "band4_gain": 1.0,
+        "band5_gain": 1.1,
+        "band6_gain": 1.1,
+        "band7_gain": 1.0,
+        "band8_gain": 0.9,
+        "band9_gain": 0.8,
+        "band10_gain": 0.6,
+        "band11_gain": 0.5,
+        "band0_decay": 1.5,
+        "band1_decay": 1.8,
+        "band2_decay": 2.0,
+        "band3_decay": 2.5,
+        "band4_decay": 3.0,
+        "band5_decay": 3.5,
+        "band6_decay": 3.5,
+        "band7_decay": 3.0,
+        "band8_decay": 2.5,
+        "band9_decay": 2.0,
+        "band10_decay": 1.8,
+        "band11_decay": 1.5,
+        "mix": 0.7
+    },
+    "reason": "To achieve a 'church' reverb for drums, higher gain and longer decay times are set for mid and high frequency bands to capture the spacious and reflective nature of a church environment, emphasizing the natural resonance. The lower frequencies are slightly reduced to avoid muddiness, while the mix level is set reasonably high to blend the reverberant sound effectively with dry drums, ensuring the feeling of a large, reverberant space typical of church acoustics."
+}

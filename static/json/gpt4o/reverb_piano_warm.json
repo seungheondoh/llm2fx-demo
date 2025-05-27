@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": 0.0,
+        "band1_gain": 0.0,
+        "band2_gain": 2.0,
+        "band3_gain": 1.5,
+        "band4_gain": 1.0,
+        "band5_gain": 0.5,
+        "band6_gain": 0.0,
+        "band7_gain": -1.0,
+        "band8_gain": -2.0,
+        "band9_gain": -1.5,
+        "band10_gain": -1.0,
+        "band11_gain": -0.5,
+        "band0_decay": 1.0,
+        "band1_decay": 1.2,
+        "band2_decay": 1.5,
+        "band3_decay": 1.7,
+        "band4_decay": 1.8,
+        "band5_decay": 1.9,
+        "band6_decay": 1.85,
+        "band7_decay": 1.8,
+        "band8_decay": 1.7,
+        "band9_decay": 1.6,
+        "band10_decay": 1.4,
+        "band11_decay": 1.2,
+        "mix": 0.35
+    },
+    "reason": "The selected frequency gains emphasize lower mid-range and upper bass frequencies, enhancing the warmth of the piano. Reducing higher frequencies prevents the reverb from sounding too bright or harsh. The decay times are set longer in the mid-range frequencies to resonate with the natural richness and sustain of a piano, thus enhancing warmth. The mix level is kept moderate to ensure the piano's presence is softened without losing clarity."
+}

@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": -3.0,
+        "low_shelf_cutoff_freq": 80.0,
+        "low_shelf_q_factor": 0.7,
+        "band0_gain_db": -6.0,
+        "band0_cutoff_freq": 250.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": -4.0,
+        "band1_cutoff_freq": 1000.0,
+        "band1_q_factor": 1.2,
+        "band2_gain_db": -5.0,
+        "band2_cutoff_freq": 3000.0,
+        "band2_q_factor": 1.2,
+        "band3_gain_db": -2.0,
+        "band3_cutoff_freq": 6000.0,
+        "band3_q_factor": 0.8,
+        "high_shelf_gain_db": -3.0,
+        "high_shelf_cutoff_freq": 10000.0,
+        "high_shelf_q_factor": 0.7
+    },
+    "reason": "To reduce harshness in drums, I applied a combination of cuts across mid and high frequencies where harshness typically resides. The low shelf is set to slightly cut the low-end boominess, while more distinct cuts in the mid and upper mid areas around 250 Hz, 1 kHz, and 3 kHz reduce boxiness and piercing characteristics. A moderate high-frequency shelf cut at 10 kHz further smoothens any remaining harshness. Q-factors are set to balance the focus and breadth of these cuts to prevent dulling the overall sound excessively."
+}

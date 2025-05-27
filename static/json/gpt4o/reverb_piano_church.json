@@ -1,0 +1,30 @@
+{
+    "reverb": {
+        "band0_gain": -3.0,
+        "band1_gain": -2.0,
+        "band2_gain": -1.5,
+        "band3_gain": -1.0,
+        "band4_gain": 0.0,
+        "band5_gain": 0.5,
+        "band6_gain": 1.0,
+        "band7_gain": 1.5,
+        "band8_gain": 2.0,
+        "band9_gain": 3.0,
+        "band10_gain": 2.5,
+        "band11_gain": 2.0,
+        "band0_decay": 2.0,
+        "band1_decay": 2.2,
+        "band2_decay": 2.5,
+        "band3_decay": 3.0,
+        "band4_decay": 3.5,
+        "band5_decay": 4.0,
+        "band6_decay": 4.5,
+        "band7_decay": 5.0,
+        "band8_decay": 5.5,
+        "band9_decay": 6.0,
+        "band10_decay": 5.8,
+        "band11_decay": 5.5,
+        "mix": 0.35
+    },
+    "reason": "To achieve a 'church' reverb effect for piano, the reverb settings emphasize longer decay times across the frequency spectrum to mimic the spacious and reflective nature of a church environment. The low and mid frequencies are slightly attenuated to prevent muddiness, while high frequencies are boosted to accentuate the bright, airy characteristics typical of large, reflective church spaces. A moderate mix level is chosen to blend the natural piano sound with the ambient church reverb without overwhelming the original tone."
+}

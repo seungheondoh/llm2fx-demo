@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": -1.5,
+        "low_shelf_cutoff_freq": 100.0,
+        "low_shelf_q_factor": 0.7,
+        "band0_gain_db": 3.0,
+        "band0_cutoff_freq": 500.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": 4.0,
+        "band1_cutoff_freq": 2000.0,
+        "band1_q_factor": 0.8,
+        "band2_gain_db": 2.5,
+        "band2_cutoff_freq": 4000.0,
+        "band2_q_factor": 1.2,
+        "band3_gain_db": 1.5,
+        "band3_cutoff_freq": 8000.0,
+        "band3_q_factor": 0.9,
+        "high_shelf_gain_db": 5.0,
+        "high_shelf_cutoff_freq": 12000.0,
+        "high_shelf_q_factor": 0.7
+    },
+    "reason": "To achieve a 'bright' sound for the piano, emphasis is placed on the middle to high-frequency ranges. A small reduction in the low shelf helps keep the bass frequencies from becoming too prominent, which can muddy the sound. Bands 0 to 3 are adjusted to enhance clarity and articulation in the higher mids and above (500 Hz to 8000 Hz), where the brightness of a piano can be most effectively accentuated. The high shelf is given a significant boost to increase the brightness across the highest frequencies, adding sparkle and presence to the piano's tone."
+}

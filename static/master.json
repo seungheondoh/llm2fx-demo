@@ -1,0 +1,499 @@
+{
+  "instruments": [
+    {
+      "name": "drums",
+      "effects": [
+        {
+          "fx_type": "reverb",
+          "variants": [
+            {
+              "name": "church",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_drums_church.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_drums_church.mp3",
+                  "json_path": "static/json/llm2fx/reverb_drums_church.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_drums_church.mp3",
+                  "json_path": "static/json/gpt4o/reverb_drums_church.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_drums_church.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_drums_church.json"
+                }
+              ]
+            },
+            {
+              "name": "sad",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_drums_sad.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_drums_sad.mp3",
+                  "json_path": "static/json/llm2fx/reverb_drums_sad.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_drums_sad.mp3",
+                  "json_path": "static/json/gpt4o/reverb_drums_sad.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_drums_sad.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_drums_sad.json"
+                }
+              ]
+            },
+            {
+              "name": "warm",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_drums_warm.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_drums_warm.mp3",
+                  "json_path": "static/json/llm2fx/reverb_drums_warm.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_drums_warm.mp3",
+                  "json_path": "static/json/gpt4o/reverb_drums_warm.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_drums_warm.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_drums_warm.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fx_type": "eq",
+          "variants": [
+            {
+              "name": "bright",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_drums_bright.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_drums_bright.mp3",
+                  "json_path": "static/json/llm2fx/eq_drums_bright.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_drums_bright.mp3",
+                  "json_path": "static/json/gpt4o/eq_drums_bright.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_drums_bright.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_drums_bright.json"
+                }
+              ]
+            },
+            {
+              "name": "warm",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_drums_warm.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_drums_warm.mp3",
+                  "json_path": "static/json/llm2fx/eq_drums_warm.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_drums_warm.mp3",
+                  "json_path": "static/json/gpt4o/eq_drums_warm.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_drums_warm.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_drums_warm.json"
+                }
+              ]
+            },
+            {
+              "name": "harsh",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_drums_harsh.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_drums_harsh.mp3",
+                  "json_path": "static/json/llm2fx/eq_drums_harsh.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_drums_harsh.mp3",
+                  "json_path": "static/json/gpt4o/eq_drums_harsh.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_drums_harsh.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_drums_harsh.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "guitar",
+      "effects": [
+        {
+          "fx_type": "reverb",
+          "variants": [
+            {
+              "name": "church",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_guitar_church.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_guitar_church.mp3",
+                  "json_path": "static/json/llm2fx/reverb_guitar_church.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_guitar_church.mp3",
+                  "json_path": "static/json/gpt4o/reverb_guitar_church.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_guitar_church.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_guitar_church.json"
+                }
+              ]
+            },
+            {
+              "name": "sad",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_guitar_sad.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_guitar_sad.mp3",
+                  "json_path": "static/json/llm2fx/reverb_guitar_sad.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_guitar_sad.mp3",
+                  "json_path": "static/json/gpt4o/reverb_guitar_sad.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_guitar_sad.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_guitar_sad.json"
+                }
+              ]
+            },
+            {
+              "name": "warm",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_guitar_warm.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_guitar_warm.mp3",
+                  "json_path": "static/json/llm2fx/reverb_guitar_warm.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_guitar_warm.mp3",
+                  "json_path": "static/json/gpt4o/reverb_guitar_warm.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_guitar_warm.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_guitar_warm.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fx_type": "eq",
+          "variants": [
+            {
+              "name": "bright",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_guitar_bright.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_guitar_bright.mp3",
+                  "json_path": "static/json/llm2fx/eq_guitar_bright.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_guitar_bright.mp3",
+                  "json_path": "static/json/gpt4o/eq_guitar_bright.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_guitar_bright.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_guitar_bright.json"
+                }
+              ]
+            },
+            {
+              "name": "warm",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_guitar_warm.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_guitar_warm.mp3",
+                  "json_path": "static/json/llm2fx/eq_guitar_warm.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_guitar_warm.mp3",
+                  "json_path": "static/json/gpt4o/eq_guitar_warm.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_guitar_warm.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_guitar_warm.json"
+                }
+              ]
+            },
+            {
+              "name": "harsh",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_guitar_harsh.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_guitar_harsh.mp3",
+                  "json_path": "static/json/llm2fx/eq_guitar_harsh.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_guitar_harsh.mp3",
+                  "json_path": "static/json/gpt4o/eq_guitar_harsh.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_guitar_harsh.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_guitar_harsh.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "piano",
+      "effects": [
+        {
+          "fx_type": "reverb",
+          "variants": [
+            {
+              "name": "church",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_piano_church.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_piano_church.mp3",
+                  "json_path": "static/json/llm2fx/reverb_piano_church.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_piano_church.mp3",
+                  "json_path": "static/json/gpt4o/reverb_piano_church.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_piano_church.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_piano_church.json"
+                }
+              ]
+            },
+            {
+              "name": "sad",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_piano_sad.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_piano_sad.mp3",
+                  "json_path": "static/json/llm2fx/reverb_piano_sad.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_piano_sad.mp3",
+                  "json_path": "static/json/gpt4o/reverb_piano_sad.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_piano_sad.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_piano_sad.json"
+                }
+              ]
+            },
+            {
+              "name": "warm",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/reverb_piano_warm.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/reverb_piano_warm.mp3",
+                  "json_path": "static/json/llm2fx/reverb_piano_warm.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/reverb_piano_warm.mp3",
+                  "json_path": "static/json/gpt4o/reverb_piano_warm.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/reverb_piano_warm.mp3",
+                  "json_path": "static/json/chu2025text2fx/reverb_piano_warm.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "fx_type": "eq",
+          "variants": [
+            {
+              "name": "bright",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_piano_bright.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_piano_bright.mp3",
+                  "json_path": "static/json/llm2fx/eq_piano_bright.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_piano_bright.mp3",
+                  "json_path": "static/json/gpt4o/eq_piano_bright.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_piano_bright.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_piano_bright.json"
+                }
+              ]
+            },
+            {
+              "name": "warm",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_piano_warm.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_piano_warm.mp3",
+                  "json_path": "static/json/llm2fx/eq_piano_warm.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_piano_warm.mp3",
+                  "json_path": "static/json/gpt4o/eq_piano_warm.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_piano_warm.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_piano_warm.json"
+                }
+              ]
+            },
+            {
+              "name": "harsh",
+              "models": [
+                {
+                  "name": "ground_truth",
+                  "audio_path": "static/audio/ground_truth/eq_piano_harsh.mp3",
+                  "json_path": ""
+                },
+                {
+                  "name": "llm2fx",
+                  "audio_path": "static/audio/llm2fx/eq_piano_harsh.mp3",
+                  "json_path": "static/json/llm2fx/eq_piano_harsh.json"
+                },
+                {
+                  "name": "gpt4o",
+                  "audio_path": "static/audio/gpt4o/eq_piano_harsh.mp3",
+                  "json_path": "static/json/gpt4o/eq_piano_harsh.json"
+                },
+                {
+                  "name": "chu2025text2fx",
+                  "audio_path": "static/audio/chu2025text2fx/eq_piano_harsh.mp3",
+                  "json_path": "static/json/chu2025text2fx/eq_piano_harsh.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

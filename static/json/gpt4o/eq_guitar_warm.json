@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 4.0,
+        "low_shelf_cutoff_freq": 120.0,
+        "low_shelf_q_factor": 0.71,
+        "band0_gain_db": 2.0,
+        "band0_cutoff_freq": 250.0,
+        "band0_q_factor": 1.0,
+        "band1_gain_db": 0.0,
+        "band1_cutoff_freq": 500.0,
+        "band1_q_factor": 1.0,
+        "band2_gain_db": -1.0,
+        "band2_cutoff_freq": 1000.0,
+        "band2_q_factor": 1.0,
+        "band3_gain_db": -2.0,
+        "band3_cutoff_freq": 3000.0,
+        "band3_q_factor": 2.0,
+        "high_shelf_gain_db": -3.0,
+        "high_shelf_cutoff_freq": 7000.0,
+        "high_shelf_q_factor": 0.71
+    },
+    "reason": "To create a warm sound for a guitar, the EQ emphasizes the lower and mid ranges which are typically associated with warmth. Boosting around 120 Hz and 250 Hz enhances the body and fullness of the guitar. Attenuating higher frequencies, particularly above 1000 Hz, reduces brightness and allows the lower frequencies to dominate, thus achieving a warm tone. The high shelf filter cuts the frequencies above 7000 Hz to prevent any harshness or excessive clarity that might detract from the desired warm character."
+}

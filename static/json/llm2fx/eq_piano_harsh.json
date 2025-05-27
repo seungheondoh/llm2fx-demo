@@ -1,0 +1,23 @@
+{
+    "eq": {
+        "low_shelf_gain_db": 0.0,
+        "low_shelf_cutoff_freq": 100.0,
+        "low_shelf_q_factor": 0.7,
+        "band0_gain_db": 0.0,
+        "band0_cutoff_freq": 400.0,
+        "band0_q_factor": 1.5,
+        "band1_gain_db": 3.0,
+        "band1_cutoff_freq": 1000.0,
+        "band1_q_factor": 1.0,
+        "band2_gain_db": 3.0,
+        "band2_cutoff_freq": 2000.0,
+        "band2_q_factor": 1.0,
+        "band3_gain_db": 1.5,
+        "band3_cutoff_freq": 4000.0,
+        "band3_q_factor": 1.0,
+        "high_shelf_gain_db": 0.0,
+        "high_shelf_cutoff_freq": 8000.0,
+        "high_shelf_q_factor": 0.5
+    },
+    "reason": "To create a harsh sound for piano, we are boosting frequencies around 1kHz to 4kHz with a relatively high Q-factor to emphasize the harshness and add brightness. The low shelf cut is applied to add emphasis on the lower mids, while keeping the low-end frequencies controlled."
+}
