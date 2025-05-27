@@ -104,17 +104,18 @@
     <section class="abstract">
         <h2>Abstract</h2>
         <p>
-            In music production, manipulating audio effects (Fx) parameters through natural language has the potential
-            to reduce technical barriers for non-experts.
-            We present <strong>LLM2Fx</strong>, a framework leveraging Large Language Models (LLMs) to predict Fx
-            parameters directly from textual descriptions
-            without requiring task-specific training or fine-tuning. Our approach addresses the text-to-effect parameter
-            prediction (Text2Fx) task
-            by mapping natural language descriptions to the corresponding Fx parameters for equalization and
-            reverberation.
+            In music production, manipulating audio effects~(Fx) parameters through natural language has the potential
+            to reduce technical barriers for non-experts. We present LLM2Fx, a framework leveraging Large Language
+            Models (LLMs) to predict Fx parameters directly from textual descriptions without requiring task-specific
+            training or fine-tuning. Our approach address the text-to-effect parameter prediction (Text2Fx) task by
+            mapping natural language descriptions to the corresponding Fx parameters for equalization and reverberation.
             We demonstrate that LLMs can generate Fx parameters in a zero-shot manner that elucidates the relationship
-            between
-            timbre semantics and audio effects in music production.
+            between timbre semantics and audio effects in music production. To enhance performance, we introduce three
+            types of in-context examples: audio Digital Signal Processing (DSP) features, DSP function code, and
+            few-shot examples. Our results demonstrate that LLM-based Fx parameter generation outperforms previous
+            optimization approaches, offering competitive performance in translating natural language descriptions to
+            appropriate Fx settings. Furthermore, LLMs can serve as text-driven interfaces for audio production, paving
+            the way for more intuitive and accessible music production tools.
         </p>
     </section>
 
