@@ -207,69 +207,87 @@
                 audio effect parameters; <br /> <b>3 Response Format</b>: enforces structured output in JSON format to
                 ensure parameter predictions are machine-readable. This prompt design ensures that the LLM generates
                 structured parameter predictions while leveraging its implicit knowledge of audio processing concepts.
+                <br /> <b>4. Incontext Information</b>: provides three types of in-context information to enhance
+                performance: (1) DSP function code that implements the audio effects, (2) DSP features that capture
+                audio characteristics, and (3) few-shot examples showing input-output pairs for incontext learning.
             </p>
         </small>
         <div class="prompt-container">
             <pre class="prompt-code"><code class="python">"""
-You are an expert audio engineer and music producer specializing in sound design and audio processing.
-Your task is to translate descriptive timbre words into specific audio effect parameters that will
-achieve the desired sound character. You have deep knowledge of equalizers and understand how they shape
-timbre. You MUST respond with ONLY a valid JSON object. Do not include any explanatory text, markdown
-formatting, or code blocks. Your entire response should parse as valid JSON.
+You are an expert audio engineer and music producer specializing in sound design and audio processing. Your task is to translate descriptive timbre words into specific audio effects parameters that will achieve the desired sound character. You have deep knowledge of equalizers and understand how they shape timbre. You MUST respond with ONLY a valid JSON object.
 
 # Instruction Format
-Given a reverb description word or phrase and an instrument type, generate appropriate parameters for a
-frequency-dependent reverb that will achieve the requested spatial character.
-For 44100 sample rate audio, Consider the typical reverb needs of the specified instrument when
-designing the reverb characteristics.
+Given a reverb description word or phrase and an instrument type, generate appropriate parameters for a frequency-dependent reverb that will achieve the requested spatial character.
+For 44100 sample rate audio, Consider the typical reverb needs of the specified instrument when designing the reverb characteristics.
 
 # Input Format
 The input will consist of:
 1. A reverb description such as:
-   - Single words: "hall", "room", "plate", "cathedral", "chamber", "spring", "ambient"
-   - Combined descriptions: "warm hall", "bright room", "dark chamber", "short but dense"
-   - Spatial descriptions: "distant", "close", "intimate", "huge", "airy", "tight"
+- Single words: "hall", "room", "plate", "cathedral", "chamber", "spring", "ambient"
+- Combined descriptions: "warm hall", "bright room", "dark chamber", "short but dense"
+- Spatial descriptions: "distant", "close", "intimate", "huge", "airy", "tight"
 2. An instrument type such as:
-   - "drums", "guitar", "piano", "vocals", "strings", "brass"
+- "drums", "guitar", "piano", "vocals", "strings", "brass"
 
 # Output Format
-Respond with a JSON object containing precise numerical parameters for the reverb. All values should be
-in float format for efficiency. The output will include:
-1. The reverb parameters optimized for the requested spatial character and instrument. All values should
-   be floating point numbers with 2 decimal places of precision.
+Respond with a JSON object containing precise numerical parameters for the reverb. All values should be in float format for efficiency. The output will include:
+1. The reverb parameters optimized for the requested spatial character and instrument. All values should be floating point numbers with 2 decimal places of precision.
 2. A detailed explanation of how the chosen parameters achieve the desired reverb effect
-
 Format:
 {
-    "reverb": {
-        "band0_gain": float,
-        "band1_gain": float,
-        "band2_gain": float,
-        "band3_gain": float,
-        "band4_gain": float,
-        "band5_gain": float,
-        "band6_gain": float,
-        "band7_gain": float,
-        "band8_gain": float,
-        "band9_gain": float,
-        "band10_gain": float,
-        "band11_gain": float,
-        "band0_decay": float,
-        "band1_decay": float,
-        "band2_decay": float,
-        "band3_decay": float,
-        "band4_decay": float,
-        "band5_decay": float,
-        "band6_decay": float,
-        "band7_decay": float,
-        "band8_decay": float,
-        "band9_decay": float,
-        "band10_decay": float,
-        "band11_decay": float,
-        "mix": float
-    },
-    "reason": str
+"reverb": {
+"band0_gain": float,
+"band1_gain": float,
+"band2_gain": float,
+"band3_gain": float,
+"band4_gain": float,
+...
+[THE REST OF THE PARAMETERS ARE OMITTED]
+},
+"reason": str
 }
+
+# Signal processing function
+
+import numpy as np
+import math
+import scipy.signal
+from scipy.fft import rfft, irfft
+from functools import partial
+
+def noise_shaped_reverberation(
+x,  # Shape: (channels, seq_len)
+sample_rate,
+band0_gain,
+...
+band11_decay,
+mix
+):
+[THE REST OF THE PYTHON CODE ARE OMITTED]
+
+# Input audio feature
+
+{'sample_rate': 44100, 'rms_energy': 0.126, 'crest_factor': 6.091, 'dynamic_spread': 0.312, 'spectral_centroid': 461.47, 'spectral_flatness': 0.001, 'spectral_bandwidth': 718.456}
+
+# Incontext examples
+
+QUESTION: please design a reverb audio effects for a echo piano sound.
+ANSWER: {'reverb': {'band0_gain': 0.0, 'band1_gain': 0.0, 'band2_gain': 0.0, 'band3_gain': 0.0, 'band4_gain': 0.0, 'band5_gain': 0.0, 'band6_gain': 0.0, 'band7_gain': 0.0, 'band8_gain': 0.0, 'band9_gain': 0.0, 'band10_gain': 0.0, 'band11_gain': 0.0, 'band0_decay': 0.1, 'band1_decay': 0.1, 'band2_decay': 0.1, 'band3_decay': 0.1, 'band4_decay': 0.1, 'band5_decay': 0.1, 'band6_decay': 0.1, 'band7_decay': 0.1, 'band8_decay': 0.1, 'band9_decay': 0.1, 'band10_decay': 0.1, 'band11_decay': 0.1, 'mix': 0.8}, 'reason': 'Creating an echo effect for piano, using a short decay time to simulate quick reflections and a modest mix level to maintain clarity and space.'}
+
+QUESTION: please design a reverb audio effects for a warm piano sound.
+ANSWER: {'reverb': {'band0_gain': 0.05, 'band1_gain': 0.1, 'band2_gain': 0.15, 'band3_gain': 0.2, 'band4_gain': 0.25, 'band5_gain': 0.3, 'band6_gain': 0.35, 'band7_gain': 0.4, 'band8_gain': 0.45, 'band9_gain': 0.5, 'band10_gain': 0.55, 'band11_gain': 0.6, 'band0_decay': 1.2, 'band1_decay': 1.8, 'band2_decay': 2.5, 'band3_decay': 3.5, 'band4_decay': 4.5, 'band5_decay': 6.0, 'band6_decay': 7.5, 'band7_decay': 9.5, 'band8_decay': 11.5, 'band9_decay': 14.0, 'band10_decay': 16.5, 'band11_decay': 19.5, 'mix': 0.8}, 'reason': 'Designed a warm sound for piano by applying a boost to the lower and middle frequency bands, creating a rich and full-bodied character. The decay times gradually increase to emphasize the warmth and produce a sense of intimacy. The mix level is set to achieve a balanced blend between the dry signal and the reverb.'}
+
+QUESTION: please design a reverb audio effects for a distorted guitar sound.
+ANSWER: {'reverb': {'band0_gain': 0.05, 'band1_gain': 0.1, 'band2_gain': 0.15, 'band3_gain': 0.2, 'band4_gain': 0.25, 'band5_gain': 0.2, 'band6_gain': 0.15, 'band7_gain': 0.1, 'band8_gain': 0.05, 'band9_gain': 0.02, 'band10_gain': 0.01, 'band11_gain': 0.0, 'band0_decay': 1.0, 'band1_decay': 0.8, 'band2_decay': 0.6, 'band3_decay': 0.4, 'band4_decay': 0.2, 'band5_decay': 0.1, 'band6_decay': 0.05, 'band7_decay': 0.02, 'band8_decay': 0.01, 'band9_decay': 0.005, 'band10_decay': 0.002, 'band11_decay': 0.001, 'mix': 0.8}, 'reason': 'The reverb is designed to enhance the distorted guitar sound by boosting the low and mid frequencies while gradually reducing the highs. The shorter decay times contribute to a tight and focused reverb tail. The lower mix value ensures the dry signal dominates while still adding a subtle sense of space.'}
+
+QUESTION: please design a reverb audio effects for a echo guitar sound.
+ANSWER: {'reverb': {'band0_gain': 0.0, 'band1_gain': 0.1, 'band2_gain': 0.2, 'band3_gain': 0.3, 'band4_gain': 0.3, 'band5_gain': 0.2, 'band6_gain': 0.1, 'band7_gain': 0.05, 'band8_gain': 0.02, 'band9_gain': 0.01, 'band10_gain': 0.01, 'band11_gain': 0.01, 'band0_decay': 0.1, 'band1_decay': 0.2, 'band2_decay': 0.3, 'band3_decay': 0.4, 'band4_decay': 0.5, 'band5_decay': 0.6, 'band6_decay': 0.7, 'band7_decay': 0.8, 'band8_decay': 0.9, 'band9_decay': 1.0, 'band10_decay': 1.1, 'band11_decay': 1.2, 'mix': 0.7}, 'reason': 'An echo effect for guitar is achieved by emphasizing the higher frequencies with higher gain values, while keeping the lower frequencies minimal to create a sense of space and ambiance. The shorter decay times help maintain the echo effect and prevent the sound from becoming too muddy or washed out.'}
+
+QUESTION: please design a reverb audio effects for a echo drums sound.
+ANSWER: {'reverb': {'band0_gain': 0.0, 'band1_gain': 0.0, 'band2_gain': 0.0, 'band3_gain': 0.0, 'band4_gain': 0.0, 'band5_gain': 0.0, 'band6_gain': 0.0, 'band7_gain': 0.0, 'band8_gain': 0.5, 'band9_gain': 1.0, 'band10_gain': 1.0, 'band11_gain': 0.5, 'band0_decay': 0.1, 'band1_decay': 0.1, 'band2_decay': 0.1, 'band3_decay': 0.1, 'band4_decay': 0.1, 'band5_decay': 0.1, 'band6_decay': 0.1, 'band7_decay': 0.1, 'band8_decay': 0.7, 'band9_decay': 0.9, 'band10_decay': 0.9, 'band11_decay': 0.7, 'mix': 0.8}, 'reason': 'Echo drums sound is characterized by a strong focus on high frequencies, along with a short attack and a gradually lengthening decay. This reverb design emphasizes high frequencies by boosting bands 8-11, while keeping the low and mid frequencies flat. The decay times for these high frequency bands are longer than those of the lower bands, creating a sense of an echo. The mix level is set to 0.8 to ensure a balanced level between the dry and wet signals.'}
+
+QUESTION: please design a reverb audio effects for a church guitar sound.
+ANSWER:
 """</code></pre>
         </div>
     </section>
