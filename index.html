@@ -90,7 +90,8 @@
             <p>A framework leveraging Large Language Models (LLMs) to predict Fx parameters directly from text</p>
         </div>
         <div class="links">
-            <a href="#" target="_blank" class="paper-link" style="margin: 0 5px">📄 Paper</a>
+            <a href="https://arxiv.org/abs/2505.20770v1" target="_blank" class="paper-link" style="margin: 0 5px">📄
+                Paper</a>
             <a href="https://github.com/SonyResearch/LLM2Fx" target="_blank" class="code-link" style="margin: 0 5px">💻
                 Code</a>
             <a href="https://huggingface.co/collections/seungheondoh/llm2fx-6821b961b982fe1eab1b00bf" target="_blank"
@@ -196,22 +197,20 @@
 
     <section class="prompt-design">
         <h2>LLM Prompt for inference</h2>
-        <small>
-            <p>
-                To effectively leverage LLMs for Fx parameter generation, we design a specialized system prompt that
-                frames the task and provides necessary constraints. Our system prompt serves three key functions:
-                <br /> <b>1 Role Definition</b>: establishes the LLM as an expert audio engineer with specialized
-                knowledge
-                in sound design and audio processing; <br /> <b>2 Task Instruction</b>: clearly defines the objective of
-                translating natural language description, such as semantic word, instrument type, Fx type, into specific
-                audio effect parameters; <br /> <b>3 Response Format</b>: enforces structured output in JSON format to
-                ensure parameter predictions are machine-readable. This prompt design ensures that the LLM generates
-                structured parameter predictions while leveraging its implicit knowledge of audio processing concepts.
-                <br /> <b>4. Incontext Information</b>: provides three types of in-context information to enhance
-                performance: (1) DSP function code that implements the audio effects, (2) DSP features that capture
-                audio characteristics, and (3) few-shot examples showing input-output pairs for incontext learning.
-            </p>
-        </small>
+        <p>
+            To effectively leverage LLMs for Fx parameter generation, we design a specialized system prompt that
+            frames the task and provides necessary constraints. Our system prompt serves four key functions:
+            <br /> <b>1 Role Definition</b>: establishes the LLM as an expert audio engineer with specialized
+            knowledge
+            in sound design and audio processing; <br /> <b>2 Task Instruction</b>: clearly defines the objective of
+            translating natural language description, such as semantic word, instrument type, Fx type, into specific
+            audio effect parameters; <br /> <b>3 Response Format</b>: enforces structured output in JSON format to
+            ensure parameter predictions are machine-readable. This prompt design ensures that the LLM generates
+            structured parameter predictions while leveraging its implicit knowledge of audio processing concepts.
+            <br /> <b>4. Incontext Information</b>: provides three types of in-context information to enhance
+            performance: (1) DSP function code that implements the audio effects, (2) DSP features that capture
+            audio characteristics, and (3) few-shot examples showing input-output pairs for incontext learning.
+        </p>
         <div class="prompt-container">
             <pre class="prompt-code"><code class="python">"""
 You are an expert audio engineer and music producer specializing in sound design and audio processing. Your task is to translate descriptive timbre words into specific audio effects parameters that will achieve the desired sound character. You have deep knowledge of equalizers and understand how they shape timbre. You MUST respond with ONLY a valid JSON object.
